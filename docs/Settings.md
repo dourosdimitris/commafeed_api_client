@@ -26,7 +26,7 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'commafeed'
 
 instance = OpenapiClient::Settings.new(
   language: null,

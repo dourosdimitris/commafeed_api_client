@@ -23,7 +23,7 @@ Delete a user, and all his subscriptions
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -92,7 +92,7 @@ Get user information
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -162,7 +162,7 @@ Get all users
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -229,7 +229,7 @@ Save or update a user. If the id is not specified, a new user will be created
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -296,7 +296,7 @@ Retrieve server metrics
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth

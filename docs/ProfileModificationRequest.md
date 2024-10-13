@@ -12,7 +12,7 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'commafeed'
 
 instance = OpenapiClient::ProfileModificationRequest.new(
   current_password: null,

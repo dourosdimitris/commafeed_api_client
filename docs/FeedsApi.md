@@ -32,7 +32,7 @@ Export an OPML file of the user's subscriptions
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -98,7 +98,7 @@ Fetch a feed by its url
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -166,7 +166,7 @@ get feed
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -236,7 +236,7 @@ Get a list of feed entries
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -320,7 +320,7 @@ Get a feed of feed entries
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -403,7 +403,7 @@ Fetch a feed's icon
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -472,7 +472,7 @@ Import an OPML file, posted as a FORM with the 'file' name
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -538,7 +538,7 @@ Mark feed entries as read (unread is not supported)
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -607,7 +607,7 @@ Modify a feed subscription
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -676,7 +676,7 @@ Manually add all feeds of the user to the refresh queue
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -742,7 +742,7 @@ Manually add a feed to the refresh queue
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -811,7 +811,7 @@ Subscribe to a feed
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -881,7 +881,7 @@ Subscribe to a feed
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -950,7 +950,7 @@ Unsubscribe from a feed
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth

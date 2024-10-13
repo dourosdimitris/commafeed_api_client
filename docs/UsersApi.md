@@ -24,7 +24,7 @@ Delete the user account
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -88,7 +88,7 @@ Retrieve user's profile
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -155,7 +155,7 @@ Retrieve user settings
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -220,7 +220,7 @@ This endpoint does not need any parameter.
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -289,7 +289,7 @@ Register a new account
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -356,7 +356,7 @@ Save user's profile
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -425,7 +425,7 @@ Save user settings
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -492,7 +492,7 @@ send a password reset email
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth

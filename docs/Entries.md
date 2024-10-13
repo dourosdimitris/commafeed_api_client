@@ -18,7 +18,7 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'commafeed'
 
 instance = OpenapiClient::Entries.new(
   name: null,

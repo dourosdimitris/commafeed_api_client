@@ -13,10 +13,10 @@ Generator version: 7.9.0
 =end
 
 $:.push File.expand_path("../lib", __FILE__)
-require "openapi_client/version"
+require "commafeed/version"
 
 Gem::Specification.new do |s|
-  s.name        = "openapi_client"
+  s.name        = "commafeed"
   s.version     = OpenapiClient::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["OpenAPI-Generator"]

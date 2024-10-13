@@ -13,7 +13,7 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'commafeed'
 
 instance = OpenapiClient::FeedModificationRequest.new(
   id: null,

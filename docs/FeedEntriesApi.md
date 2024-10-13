@@ -23,7 +23,7 @@ Get list of tags for the user
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -89,7 +89,7 @@ Mark feed entries as read/unread
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -158,7 +158,7 @@ Mark a feed entry as read/unread
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -227,7 +227,7 @@ Mark a feed entry as read/unread
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -294,7 +294,7 @@ Set feed entry tags
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth

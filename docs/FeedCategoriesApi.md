@@ -27,7 +27,7 @@ Add a new feed category
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -97,7 +97,7 @@ Save collapsed or expanded status for a category
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -166,7 +166,7 @@ Delete an existing feed category
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -235,7 +235,7 @@ Get a list of category entries
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -323,7 +323,7 @@ Get a feed of category entries
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -410,7 +410,7 @@ Get all categories and subscriptions of the user
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -475,7 +475,7 @@ Get unread count for feed subscriptions
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -542,7 +542,7 @@ Mark feed entries of this category as read
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
@@ -611,7 +611,7 @@ Rename an existing feed category
 
 ```ruby
 require 'time'
-require 'openapi_client'
+require 'commafeed'
 # setup authorization
 OpenapiClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth

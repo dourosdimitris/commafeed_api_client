@@ -10,7 +10,7 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'commafeed'
 
 instance = OpenapiClient::CollapseRequest.new(
   id: null,

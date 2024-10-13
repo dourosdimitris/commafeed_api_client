@@ -22,7 +22,7 @@
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'commafeed'
 
 instance = OpenapiClient::Subscription.new(
   id: null,
