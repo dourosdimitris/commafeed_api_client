@@ -1,4 +1,4 @@
-# OpenapiClient::ServerApi
+# CommafeedClient::ServerApi
 
 All URIs are relative to *http://localhost:8082*
 
@@ -20,19 +20,19 @@ proxy image
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::ServerApi.new
+api_instance = CommafeedClient::ServerApi.new
 u = 'u_example' # String | image url
 
 begin
   # proxy image
   api_instance.get_proxied_image(u)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling ServerApi->get_proxied_image: #{e}"
 end
 ```
@@ -50,7 +50,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling ServerApi->get_proxied_image_with_http_info: #{e}"
 end
 ```
@@ -89,19 +89,19 @@ Get server infos
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::ServerApi.new
+api_instance = CommafeedClient::ServerApi.new
 
 begin
   # Get server infos
   result = api_instance.get_server_infos
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling ServerApi->get_server_infos: #{e}"
 end
 ```
@@ -119,7 +119,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <ServerInfo>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling ServerApi->get_server_infos_with_http_info: #{e}"
 end
 ```

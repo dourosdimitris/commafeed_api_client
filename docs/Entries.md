@@ -1,4 +1,4 @@
-# OpenapiClient::Entries
+# CommafeedClient::Entries
 
 ## Properties
 
@@ -20,7 +20,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::Entries.new(
+instance = CommafeedClient::Entries.new(
   name: null,
   message: null,
   error_count: null,

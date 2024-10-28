@@ -1,4 +1,4 @@
-# OpenapiClient::MarkRequest
+# CommafeedClient::MarkRequest
 
 ## Properties
 
@@ -16,7 +16,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::MarkRequest.new(
+instance = CommafeedClient::MarkRequest.new(
   id: null,
   read: null,
   older_than: null,

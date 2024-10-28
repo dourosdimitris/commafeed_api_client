@@ -1,4 +1,4 @@
-# OpenapiClient::ProfileModificationRequest
+# CommafeedClient::ProfileModificationRequest
 
 ## Properties
 
@@ -14,7 +14,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::ProfileModificationRequest.new(
+instance = CommafeedClient::ProfileModificationRequest.new(
   current_password: null,
   email: null,
   new_password: null,

@@ -10,7 +10,7 @@ Generator version: 7.9.0
 
 =end
 
-module OpenapiClient
+module CommafeedClient
   class Configuration
     # Defines url scheme
     attr_accessor :scheme

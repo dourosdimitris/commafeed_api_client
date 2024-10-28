@@ -1,4 +1,4 @@
-# OpenapiClient::ServerInfo
+# CommafeedClient::ServerInfo
 
 ## Properties
 
@@ -21,7 +21,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::ServerInfo.new(
+instance = CommafeedClient::ServerInfo.new(
   announcement: null,
   version: null,
   git_commit: null,

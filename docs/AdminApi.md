@@ -1,4 +1,4 @@
-# OpenapiClient::AdminApi
+# CommafeedClient::AdminApi
 
 All URIs are relative to *http://localhost:8082*
 
@@ -25,19 +25,19 @@ Delete a user, and all his subscriptions
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::AdminApi.new
-id_request = OpenapiClient::IDRequest.new({id: 3.56}) # IDRequest | 
+api_instance = CommafeedClient::AdminApi.new
+id_request = CommafeedClient::IDRequest.new({id: 3.56}) # IDRequest | 
 
 begin
   # Delete a user
   api_instance.admin_delete_user(id_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->admin_delete_user: #{e}"
 end
 ```
@@ -55,7 +55,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->admin_delete_user_with_http_info: #{e}"
 end
 ```
@@ -94,20 +94,20 @@ Get user information
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::AdminApi.new
+api_instance = CommafeedClient::AdminApi.new
 id = 789 # Integer | user id
 
 begin
   # Get user information
   result = api_instance.admin_get_user(id)
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->admin_get_user: #{e}"
 end
 ```
@@ -125,7 +125,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UserModel>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->admin_get_user_with_http_info: #{e}"
 end
 ```
@@ -164,19 +164,19 @@ Get all users
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::AdminApi.new
+api_instance = CommafeedClient::AdminApi.new
 
 begin
   # Get all users
   result = api_instance.admin_get_users
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->admin_get_users: #{e}"
 end
 ```
@@ -194,7 +194,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<UserModel>>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->admin_get_users_with_http_info: #{e}"
 end
 ```
@@ -231,19 +231,19 @@ Save or update a user. If the id is not specified, a new user will be created
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::AdminApi.new
-admin_save_user_request = OpenapiClient::AdminSaveUserRequest.new({name: 'name_example', enabled: false, admin: false}) # AdminSaveUserRequest | 
+api_instance = CommafeedClient::AdminApi.new
+admin_save_user_request = CommafeedClient::AdminSaveUserRequest.new({name: 'name_example', enabled: false, admin: false}) # AdminSaveUserRequest | 
 
 begin
   # Save or update a user
   api_instance.admin_save_user(admin_save_user_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->admin_save_user: #{e}"
 end
 ```
@@ -261,7 +261,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->admin_save_user_with_http_info: #{e}"
 end
 ```
@@ -298,18 +298,18 @@ Retrieve server metrics
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::AdminApi.new
+api_instance = CommafeedClient::AdminApi.new
 
 begin
   # Retrieve server metrics
   api_instance.get_metrics
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->get_metrics: #{e}"
 end
 ```
@@ -327,7 +327,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling AdminApi->get_metrics_with_http_info: #{e}"
 end
 ```

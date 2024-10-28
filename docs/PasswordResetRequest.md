@@ -1,4 +1,4 @@
-# OpenapiClient::PasswordResetRequest
+# CommafeedClient::PasswordResetRequest
 
 ## Properties
 
@@ -11,7 +11,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::PasswordResetRequest.new(
+instance = CommafeedClient::PasswordResetRequest.new(
   email: null
 )
 ```

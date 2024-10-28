@@ -1,4 +1,4 @@
-# OpenapiClient::CollapseRequest
+# CommafeedClient::CollapseRequest
 
 ## Properties
 
@@ -12,7 +12,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::CollapseRequest.new(
+instance = CommafeedClient::CollapseRequest.new(
   id: null,
   collapse: null
 )

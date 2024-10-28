@@ -12,7 +12,7 @@ Generator version: 7.9.0
 
 require 'cgi'
 
-module OpenapiClient
+module CommafeedClient
   class UsersApi
     attr_accessor :api_client
 

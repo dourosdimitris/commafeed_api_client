@@ -1,4 +1,4 @@
-# OpenapiClient::MultipleMarkRequest
+# CommafeedClient::MultipleMarkRequest
 
 ## Properties
 
@@ -11,7 +11,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::MultipleMarkRequest.new(
+instance = CommafeedClient::MultipleMarkRequest.new(
   requests: null
 )
 ```

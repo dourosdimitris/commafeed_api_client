@@ -10,7 +10,7 @@ Generator version: 7.9.0
 
 =end
 
-module OpenapiClient
+module CommafeedClient
   class ApiError < StandardError
     attr_reader :code, :response_headers, :response_body
 

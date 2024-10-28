@@ -1,4 +1,4 @@
-# OpenapiClient::RegistrationRequest
+# CommafeedClient::RegistrationRequest
 
 ## Properties
 
@@ -13,7 +13,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::RegistrationRequest.new(
+instance = CommafeedClient::RegistrationRequest.new(
   name: null,
   password: null,
   email: null

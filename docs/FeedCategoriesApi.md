@@ -1,4 +1,4 @@
-# OpenapiClient::FeedCategoriesApi
+# CommafeedClient::FeedCategoriesApi
 
 All URIs are relative to *http://localhost:8082*
 
@@ -29,20 +29,20 @@ Add a new feed category
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
-add_category_request = OpenapiClient::AddCategoryRequest.new({name: 'name_example'}) # AddCategoryRequest | 
+api_instance = CommafeedClient::FeedCategoriesApi.new
+add_category_request = CommafeedClient::AddCategoryRequest.new({name: 'name_example'}) # AddCategoryRequest | 
 
 begin
   # Add a category
   result = api_instance.add_category(add_category_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->add_category: #{e}"
 end
 ```
@@ -60,7 +60,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => Integer
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->add_category_with_http_info: #{e}"
 end
 ```
@@ -99,19 +99,19 @@ Save collapsed or expanded status for a category
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
-collapse_request = OpenapiClient::CollapseRequest.new({id: 3.56, collapse: false}) # CollapseRequest | 
+api_instance = CommafeedClient::FeedCategoriesApi.new
+collapse_request = CommafeedClient::CollapseRequest.new({id: 3.56, collapse: false}) # CollapseRequest | 
 
 begin
   # Collapse a category
   api_instance.collapse_category(collapse_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->collapse_category: #{e}"
 end
 ```
@@ -129,7 +129,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->collapse_category_with_http_info: #{e}"
 end
 ```
@@ -168,19 +168,19 @@ Delete an existing feed category
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
-id_request = OpenapiClient::IDRequest.new({id: 3.56}) # IDRequest | 
+api_instance = CommafeedClient::FeedCategoriesApi.new
+id_request = CommafeedClient::IDRequest.new({id: 3.56}) # IDRequest | 
 
 begin
   # Delete a category
   api_instance.delete_category(id_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->delete_category: #{e}"
 end
 ```
@@ -198,7 +198,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->delete_category_with_http_info: #{e}"
 end
 ```
@@ -237,13 +237,13 @@ Get a list of category entries
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
+api_instance = CommafeedClient::FeedCategoriesApi.new
 id = 'id_example' # String | id of the category, 'all' or 'starred'
 read_type = 'all' # String | all entries or only unread ones
 opts = {
@@ -260,7 +260,7 @@ begin
   # Get category entries
   result = api_instance.get_category_entries(id, read_type, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->get_category_entries: #{e}"
 end
 ```
@@ -278,7 +278,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Entries>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->get_category_entries_with_http_info: #{e}"
 end
 ```
@@ -325,13 +325,13 @@ Get a feed of category entries
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
+api_instance = CommafeedClient::FeedCategoriesApi.new
 id = 'id_example' # String | id of the category, 'all' or 'starred'
 read_type = 'all' # String | all entries or only unread ones
 opts = {
@@ -347,7 +347,7 @@ opts = {
 begin
   # Get category entries as feed
   api_instance.get_category_entries_as_feed(id, read_type, opts)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->get_category_entries_as_feed: #{e}"
 end
 ```
@@ -365,7 +365,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->get_category_entries_as_feed_with_http_info: #{e}"
 end
 ```
@@ -412,19 +412,19 @@ Get all categories and subscriptions of the user
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
+api_instance = CommafeedClient::FeedCategoriesApi.new
 
 begin
   # Get root category
   result = api_instance.get_root_category
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->get_root_category: #{e}"
 end
 ```
@@ -442,7 +442,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Category>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->get_root_category_with_http_info: #{e}"
 end
 ```
@@ -477,19 +477,19 @@ Get unread count for feed subscriptions
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
+api_instance = CommafeedClient::FeedCategoriesApi.new
 
 begin
   # Get unread count for feed subscriptions
   result = api_instance.get_unread_count
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->get_unread_count: #{e}"
 end
 ```
@@ -507,7 +507,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Array<UnreadCount>>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->get_unread_count_with_http_info: #{e}"
 end
 ```
@@ -544,19 +544,19 @@ Mark feed entries of this category as read
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
-mark_request = OpenapiClient::MarkRequest.new({id: 'id_example', read: false}) # MarkRequest | category id, or 'all'
+api_instance = CommafeedClient::FeedCategoriesApi.new
+mark_request = CommafeedClient::MarkRequest.new({id: 'id_example', read: false}) # MarkRequest | category id, or 'all'
 
 begin
   # Mark category entries
   api_instance.mark_category_entries(mark_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->mark_category_entries: #{e}"
 end
 ```
@@ -574,7 +574,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->mark_category_entries_with_http_info: #{e}"
 end
 ```
@@ -613,19 +613,19 @@ Rename an existing feed category
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedCategoriesApi.new
-category_modification_request = OpenapiClient::CategoryModificationRequest.new({id: 3.56}) # CategoryModificationRequest | 
+api_instance = CommafeedClient::FeedCategoriesApi.new
+category_modification_request = CommafeedClient::CategoryModificationRequest.new({id: 3.56}) # CategoryModificationRequest | 
 
 begin
   # Rename a category
   api_instance.modify_category(category_modification_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->modify_category: #{e}"
 end
 ```
@@ -643,7 +643,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedCategoriesApi->modify_category_with_http_info: #{e}"
 end
 ```

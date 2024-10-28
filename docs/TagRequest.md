@@ -1,4 +1,4 @@
-# OpenapiClient::TagRequest
+# CommafeedClient::TagRequest
 
 ## Properties
 
@@ -12,7 +12,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::TagRequest.new(
+instance = CommafeedClient::TagRequest.new(
   entry_id: null,
   tags: null
 )

@@ -1,4 +1,4 @@
-# OpenapiClient::FeedModificationRequest
+# CommafeedClient::FeedModificationRequest
 
 ## Properties
 
@@ -15,7 +15,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::FeedModificationRequest.new(
+instance = CommafeedClient::FeedModificationRequest.new(
   id: null,
   name: null,
   category_id: null,

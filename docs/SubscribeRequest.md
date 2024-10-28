@@ -1,4 +1,4 @@
-# OpenapiClient::SubscribeRequest
+# CommafeedClient::SubscribeRequest
 
 ## Properties
 
@@ -13,7 +13,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::SubscribeRequest.new(
+instance = CommafeedClient::SubscribeRequest.new(
   url: null,
   title: null,
   category_id: null

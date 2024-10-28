@@ -1,4 +1,4 @@
-# OpenapiClient::FeedEntriesApi
+# CommafeedClient::FeedEntriesApi
 
 All URIs are relative to *http://localhost:8082*
 
@@ -25,18 +25,18 @@ Get list of tags for the user
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedEntriesApi.new
+api_instance = CommafeedClient::FeedEntriesApi.new
 
 begin
   # Get list of tags for the user
   api_instance.get_tags
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->get_tags: #{e}"
 end
 ```
@@ -54,7 +54,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->get_tags_with_http_info: #{e}"
 end
 ```
@@ -91,19 +91,19 @@ Mark feed entries as read/unread
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedEntriesApi.new
-multiple_mark_request = OpenapiClient::MultipleMarkRequest.new({requests: [OpenapiClient::MarkRequest.new({id: 'id_example', read: false})]}) # MultipleMarkRequest | Multiple Mark Request
+api_instance = CommafeedClient::FeedEntriesApi.new
+multiple_mark_request = CommafeedClient::MultipleMarkRequest.new({requests: [CommafeedClient::MarkRequest.new({id: 'id_example', read: false})]}) # MultipleMarkRequest | Multiple Mark Request
 
 begin
   # Mark multiple feed entries
   api_instance.mark_entries(multiple_mark_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->mark_entries: #{e}"
 end
 ```
@@ -121,7 +121,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->mark_entries_with_http_info: #{e}"
 end
 ```
@@ -160,19 +160,19 @@ Mark a feed entry as read/unread
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedEntriesApi.new
-mark_request = OpenapiClient::MarkRequest.new({id: 'id_example', read: false}) # MarkRequest | Mark Request
+api_instance = CommafeedClient::FeedEntriesApi.new
+mark_request = CommafeedClient::MarkRequest.new({id: 'id_example', read: false}) # MarkRequest | Mark Request
 
 begin
   # Mark a feed entry
   api_instance.mark_entry(mark_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->mark_entry: #{e}"
 end
 ```
@@ -190,7 +190,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->mark_entry_with_http_info: #{e}"
 end
 ```
@@ -229,19 +229,19 @@ Mark a feed entry as read/unread
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedEntriesApi.new
-star_request = OpenapiClient::StarRequest.new({id: 'id_example', feed_id: 3.56, starred: false}) # StarRequest | Star Request
+api_instance = CommafeedClient::FeedEntriesApi.new
+star_request = CommafeedClient::StarRequest.new({id: 'id_example', feed_id: 3.56, starred: false}) # StarRequest | Star Request
 
 begin
   # Star a feed entry
   api_instance.star_entry(star_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->star_entry: #{e}"
 end
 ```
@@ -259,7 +259,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->star_entry_with_http_info: #{e}"
 end
 ```
@@ -296,19 +296,19 @@ Set feed entry tags
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedEntriesApi.new
-tag_request = OpenapiClient::TagRequest.new({entry_id: 3.56, tags: ['tags_example']}) # TagRequest | Tag Request
+api_instance = CommafeedClient::FeedEntriesApi.new
+tag_request = CommafeedClient::TagRequest.new({entry_id: 3.56, tags: ['tags_example']}) # TagRequest | Tag Request
 
 begin
   # Set feed entry tags
   api_instance.tag_entry(tag_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->tag_entry: #{e}"
 end
 ```
@@ -326,7 +326,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedEntriesApi->tag_entry_with_http_info: #{e}"
 end
 ```

@@ -1,4 +1,4 @@
-# OpenapiClient::UnreadCount
+# CommafeedClient::UnreadCount
 
 ## Properties
 
@@ -13,7 +13,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::UnreadCount.new(
+instance = CommafeedClient::UnreadCount.new(
   feed_id: null,
   unread_count: null,
   newest_item_time: null

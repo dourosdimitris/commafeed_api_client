@@ -1,4 +1,4 @@
-# OpenapiClient::AdminSaveUserRequest
+# CommafeedClient::AdminSaveUserRequest
 
 ## Properties
 
@@ -16,7 +16,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::AdminSaveUserRequest.new(
+instance = CommafeedClient::AdminSaveUserRequest.new(
   id: null,
   name: null,
   email: null,

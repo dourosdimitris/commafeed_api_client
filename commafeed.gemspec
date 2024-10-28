@@ -17,7 +17,7 @@ require "commafeed/version"
 
 Gem::Specification.new do |s|
   s.name        = "commafeed"
-  s.version     = OpenapiClient::VERSION
+  s.version     = CommafeedClient::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["OpenAPI-Generator"]
   s.email       = [""]

@@ -1,4 +1,4 @@
-# OpenapiClient::SharingSettings
+# CommafeedClient::SharingSettings
 
 ## Properties
 
@@ -18,7 +18,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::SharingSettings.new(
+instance = CommafeedClient::SharingSettings.new(
   email: null,
   gmail: null,
   facebook: null,

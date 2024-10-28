@@ -1,4 +1,4 @@
-# OpenapiClient::Settings
+# CommafeedClient::Settings
 
 ## Properties
 
@@ -28,7 +28,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::Settings.new(
+instance = CommafeedClient::Settings.new(
   language: null,
   reading_mode: null,
   reading_order: null,

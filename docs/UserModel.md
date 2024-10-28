@@ -1,4 +1,4 @@
-# OpenapiClient::UserModel
+# CommafeedClient::UserModel
 
 ## Properties
 
@@ -20,7 +20,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::UserModel.new(
+instance = CommafeedClient::UserModel.new(
   id: null,
   name: null,
   email: null,

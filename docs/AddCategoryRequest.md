@@ -1,4 +1,4 @@
-# OpenapiClient::AddCategoryRequest
+# CommafeedClient::AddCategoryRequest
 
 ## Properties
 
@@ -12,7 +12,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::AddCategoryRequest.new(
+instance = CommafeedClient::AddCategoryRequest.new(
   name: null,
   parent_id: null
 )

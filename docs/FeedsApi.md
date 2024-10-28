@@ -1,4 +1,4 @@
-# OpenapiClient::FeedsApi
+# CommafeedClient::FeedsApi
 
 All URIs are relative to *http://localhost:8082*
 
@@ -34,18 +34,18 @@ Export an OPML file of the user's subscriptions
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
+api_instance = CommafeedClient::FeedsApi.new
 
 begin
   # OPML export
   api_instance.export_opml
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->export_opml: #{e}"
 end
 ```
@@ -63,7 +63,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->export_opml_with_http_info: #{e}"
 end
 ```
@@ -100,20 +100,20 @@ Fetch a feed by its url
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
-feed_info_request = OpenapiClient::FeedInfoRequest.new({url: 'url_example'}) # FeedInfoRequest | feed url
+api_instance = CommafeedClient::FeedsApi.new
+feed_info_request = CommafeedClient::FeedInfoRequest.new({url: 'url_example'}) # FeedInfoRequest | feed url
 
 begin
   # Fetch a feed
   result = api_instance.fetch_feed(feed_info_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->fetch_feed: #{e}"
 end
 ```
@@ -131,7 +131,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <FeedInfo>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->fetch_feed_with_http_info: #{e}"
 end
 ```
@@ -168,20 +168,20 @@ get feed
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
+api_instance = CommafeedClient::FeedsApi.new
 id = 789 # Integer | user id
 
 begin
   # get feed
   result = api_instance.get_feed(id)
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->get_feed: #{e}"
 end
 ```
@@ -199,7 +199,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Subscription>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->get_feed_with_http_info: #{e}"
 end
 ```
@@ -238,13 +238,13 @@ Get a list of feed entries
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
+api_instance = CommafeedClient::FeedsApi.new
 id = 'id_example' # String | id of the feed
 read_type = 'all' # String | all entries or only unread ones
 opts = {
@@ -259,7 +259,7 @@ begin
   # Get feed entries
   result = api_instance.get_feed_entries(id, read_type, opts)
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->get_feed_entries: #{e}"
 end
 ```
@@ -277,7 +277,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Entries>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->get_feed_entries_with_http_info: #{e}"
 end
 ```
@@ -322,13 +322,13 @@ Get a feed of feed entries
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
+api_instance = CommafeedClient::FeedsApi.new
 id = 'id_example' # String | id of the feed
 read_type = 'all' # String | all entries or only unread ones
 opts = {
@@ -342,7 +342,7 @@ opts = {
 begin
   # Get feed entries as a feed
   api_instance.get_feed_entries_as_feed(id, read_type, opts)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->get_feed_entries_as_feed: #{e}"
 end
 ```
@@ -360,7 +360,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->get_feed_entries_as_feed_with_http_info: #{e}"
 end
 ```
@@ -405,19 +405,19 @@ Fetch a feed's icon
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
+api_instance = CommafeedClient::FeedsApi.new
 id = 789 # Integer | subscription id
 
 begin
   # Fetch a feed's icon
   api_instance.get_feed_favicon(id)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->get_feed_favicon: #{e}"
 end
 ```
@@ -435,7 +435,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->get_feed_favicon_with_http_info: #{e}"
 end
 ```
@@ -474,18 +474,18 @@ Import an OPML file, posted as a FORM with the 'file' name
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
+api_instance = CommafeedClient::FeedsApi.new
 
 begin
   # OPML import
   api_instance.import_opml
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->import_opml: #{e}"
 end
 ```
@@ -503,7 +503,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->import_opml_with_http_info: #{e}"
 end
 ```
@@ -540,19 +540,19 @@ Mark feed entries as read (unread is not supported)
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
-mark_request = OpenapiClient::MarkRequest.new({id: 'id_example', read: false}) # MarkRequest | Mark request
+api_instance = CommafeedClient::FeedsApi.new
+mark_request = CommafeedClient::MarkRequest.new({id: 'id_example', read: false}) # MarkRequest | Mark request
 
 begin
   # Mark feed entries
   api_instance.mark_feed_entries(mark_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->mark_feed_entries: #{e}"
 end
 ```
@@ -570,7 +570,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->mark_feed_entries_with_http_info: #{e}"
 end
 ```
@@ -609,19 +609,19 @@ Modify a feed subscription
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
-feed_modification_request = OpenapiClient::FeedModificationRequest.new({id: 3.56}) # FeedModificationRequest | subscription id
+api_instance = CommafeedClient::FeedsApi.new
+feed_modification_request = CommafeedClient::FeedModificationRequest.new({id: 3.56}) # FeedModificationRequest | subscription id
 
 begin
   # Modify a subscription
   api_instance.modify_feed(feed_modification_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->modify_feed: #{e}"
 end
 ```
@@ -639,7 +639,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->modify_feed_with_http_info: #{e}"
 end
 ```
@@ -678,18 +678,18 @@ Manually add all feeds of the user to the refresh queue
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
+api_instance = CommafeedClient::FeedsApi.new
 
 begin
   # Queue all feeds of the user for refresh
   api_instance.queue_all_for_refresh
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->queue_all_for_refresh: #{e}"
 end
 ```
@@ -707,7 +707,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->queue_all_for_refresh_with_http_info: #{e}"
 end
 ```
@@ -744,19 +744,19 @@ Manually add a feed to the refresh queue
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
-id_request = OpenapiClient::IDRequest.new({id: 3.56}) # IDRequest | Feed id
+api_instance = CommafeedClient::FeedsApi.new
+id_request = CommafeedClient::IDRequest.new({id: 3.56}) # IDRequest | Feed id
 
 begin
   # Queue a feed for refresh
   api_instance.queue_for_refresh(id_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->queue_for_refresh: #{e}"
 end
 ```
@@ -774,7 +774,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->queue_for_refresh_with_http_info: #{e}"
 end
 ```
@@ -813,20 +813,20 @@ Subscribe to a feed
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
-subscribe_request = OpenapiClient::SubscribeRequest.new({url: 'url_example', title: 'title_example'}) # SubscribeRequest | subscription request
+api_instance = CommafeedClient::FeedsApi.new
+subscribe_request = CommafeedClient::SubscribeRequest.new({url: 'url_example', title: 'title_example'}) # SubscribeRequest | subscription request
 
 begin
   # Subscribe to a feed
   result = api_instance.subscribe(subscribe_request)
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->subscribe: #{e}"
 end
 ```
@@ -844,7 +844,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => Integer
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->subscribe_with_http_info: #{e}"
 end
 ```
@@ -883,19 +883,19 @@ Subscribe to a feed
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
+api_instance = CommafeedClient::FeedsApi.new
 url = 'url_example' # String | feed url
 
 begin
   # Subscribe to a feed
   api_instance.subscribe_from_url(url)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->subscribe_from_url: #{e}"
 end
 ```
@@ -913,7 +913,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->subscribe_from_url_with_http_info: #{e}"
 end
 ```
@@ -952,19 +952,19 @@ Unsubscribe from a feed
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::FeedsApi.new
-id_request = OpenapiClient::IDRequest.new({id: 3.56}) # IDRequest | 
+api_instance = CommafeedClient::FeedsApi.new
+id_request = CommafeedClient::IDRequest.new({id: 3.56}) # IDRequest | 
 
 begin
   # Unsubscribe from a feed
   api_instance.unsubscribe(id_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->unsubscribe: #{e}"
 end
 ```
@@ -982,7 +982,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling FeedsApi->unsubscribe_with_http_info: #{e}"
 end
 ```

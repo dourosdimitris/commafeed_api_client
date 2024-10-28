@@ -1,4 +1,4 @@
-# OpenapiClient::UsersApi
+# CommafeedClient::UsersApi
 
 All URIs are relative to *http://localhost:8082*
 
@@ -26,18 +26,18 @@ Delete the user account
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::UsersApi.new
+api_instance = CommafeedClient::UsersApi.new
 
 begin
   # Delete the user account
   api_instance.delete_user
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->delete_user: #{e}"
 end
 ```
@@ -55,7 +55,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->delete_user_with_http_info: #{e}"
 end
 ```
@@ -90,19 +90,19 @@ Retrieve user's profile
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::UsersApi.new
+api_instance = CommafeedClient::UsersApi.new
 
 begin
   # Retrieve user's profile
   result = api_instance.get_user_profile
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->get_user_profile: #{e}"
 end
 ```
@@ -120,7 +120,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <UserModel>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->get_user_profile_with_http_info: #{e}"
 end
 ```
@@ -157,19 +157,19 @@ Retrieve user settings
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::UsersApi.new
+api_instance = CommafeedClient::UsersApi.new
 
 begin
   # Retrieve user settings
   result = api_instance.get_user_settings
   p result
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->get_user_settings: #{e}"
 end
 ```
@@ -187,7 +187,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => <Settings>
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->get_user_settings_with_http_info: #{e}"
 end
 ```
@@ -222,20 +222,20 @@ This endpoint does not need any parameter.
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::UsersApi.new
+api_instance = CommafeedClient::UsersApi.new
 email = 'email_example' # String | 
 token = 'token_example' # String | 
 
 begin
   
   api_instance.password_recovery_callback(email, token)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->password_recovery_callback: #{e}"
 end
 ```
@@ -253,7 +253,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->password_recovery_callback_with_http_info: #{e}"
 end
 ```
@@ -291,19 +291,19 @@ Register a new account
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::UsersApi.new
-registration_request = OpenapiClient::RegistrationRequest.new({name: 'name_example', password: 'password_example', email: 'email_example'}) # RegistrationRequest | 
+api_instance = CommafeedClient::UsersApi.new
+registration_request = CommafeedClient::RegistrationRequest.new({name: 'name_example', password: 'password_example', email: 'email_example'}) # RegistrationRequest | 
 
 begin
   # Register a new account
   api_instance.register_user(registration_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->register_user: #{e}"
 end
 ```
@@ -321,7 +321,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->register_user_with_http_info: #{e}"
 end
 ```
@@ -358,19 +358,19 @@ Save user's profile
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::UsersApi.new
-profile_modification_request = OpenapiClient::ProfileModificationRequest.new({current_password: 'current_password_example'}) # ProfileModificationRequest | 
+api_instance = CommafeedClient::UsersApi.new
+profile_modification_request = CommafeedClient::ProfileModificationRequest.new({current_password: 'current_password_example'}) # ProfileModificationRequest | 
 
 begin
   # Save user's profile
   api_instance.save_user_profile(profile_modification_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->save_user_profile: #{e}"
 end
 ```
@@ -388,7 +388,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->save_user_profile_with_http_info: #{e}"
 end
 ```
@@ -427,19 +427,19 @@ Save user settings
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::UsersApi.new
-settings = OpenapiClient::Settings.new({language: 'language_example', reading_mode: 'all,unread', reading_order: 'asc,desc', show_read: false, scroll_marks: false, scroll_speed: 37, scroll_mode: 'always,never,if_needed', entries_to_keep_on_top_when_scrolling: 37, star_icon_display_mode: 'always,never,on_desktop,on_mobile', external_link_icon_display_mode: 'always,never,on_desktop,on_mobile', mark_all_as_read_confirmation: false, custom_context_menu: false, mobile_footer: false, unread_count_title: false, unread_count_favicon: false, sharing_settings: OpenapiClient::SharingSettings.new({email: false, gmail: false, facebook: false, twitter: false, tumblr: false, pocket: false, instapaper: false, buffer: false})}) # Settings | 
+api_instance = CommafeedClient::UsersApi.new
+settings = CommafeedClient::Settings.new({language: 'language_example', reading_mode: 'all,unread', reading_order: 'asc,desc', show_read: false, scroll_marks: false, scroll_speed: 37, scroll_mode: 'always,never,if_needed', entries_to_keep_on_top_when_scrolling: 37, star_icon_display_mode: 'always,never,on_desktop,on_mobile', external_link_icon_display_mode: 'always,never,on_desktop,on_mobile', mark_all_as_read_confirmation: false, custom_context_menu: false, mobile_footer: false, unread_count_title: false, unread_count_favicon: false, sharing_settings: CommafeedClient::SharingSettings.new({email: false, gmail: false, facebook: false, twitter: false, tumblr: false, pocket: false, instapaper: false, buffer: false})}) # Settings | 
 
 begin
   # Save user settings
   api_instance.save_user_settings(settings)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->save_user_settings: #{e}"
 end
 ```
@@ -457,7 +457,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->save_user_settings_with_http_info: #{e}"
 end
 ```
@@ -494,19 +494,19 @@ send a password reset email
 require 'time'
 require 'commafeed'
 # setup authorization
-OpenapiClient.configure do |config|
+CommafeedClient.configure do |config|
   # Configure HTTP basic authorization: basicAuth
   config.username = 'YOUR USERNAME'
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = OpenapiClient::UsersApi.new
-password_reset_request = OpenapiClient::PasswordResetRequest.new({email: 'email_example'}) # PasswordResetRequest | 
+api_instance = CommafeedClient::UsersApi.new
+password_reset_request = CommafeedClient::PasswordResetRequest.new({email: 'email_example'}) # PasswordResetRequest | 
 
 begin
   # send a password reset email
   api_instance.send_password_reset(password_reset_request)
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->send_password_reset: #{e}"
 end
 ```
@@ -524,7 +524,7 @@ begin
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
-rescue OpenapiClient::ApiError => e
+rescue CommafeedClient::ApiError => e
   puts "Error when calling UsersApi->send_password_reset_with_http_info: #{e}"
 end
 ```

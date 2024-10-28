@@ -1,4 +1,4 @@
-# OpenapiClient::StarRequest
+# CommafeedClient::StarRequest
 
 ## Properties
 
@@ -13,7 +13,7 @@
 ```ruby
 require 'commafeed'
 
-instance = OpenapiClient::StarRequest.new(
+instance = CommafeedClient::StarRequest.new(
   id: null,
   feed_id: null,
   starred: null

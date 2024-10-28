@@ -51,10 +51,10 @@ require 'commafeed/api/feeds_api'
 require 'commafeed/api/server_api'
 require 'commafeed/api/users_api'
 
-module OpenapiClient
+module CommafeedClient
   class << self
     # Customize default settings for the SDK using block.
-    #   OpenapiClient.configure do |config|
+    #   CommafeedClient.configure do |config|
     #     config.username = "xxx"
     #     config.password = "xxx"
     #   end
